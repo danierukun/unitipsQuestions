@@ -1,0 +1,13 @@
+<html>
+  <head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "quiz/style.css" %}">
+  </head>
+  <body>
+    {% if is_correct %}
+    La respuesta es correcta.
+    {% else %}
+    La respuesta es incorrecta.
+    {% endif %}
+  </body>
+</html>

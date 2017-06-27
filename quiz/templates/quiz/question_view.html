@@ -1,0 +1,16 @@
+<html>
+  <head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "quiz/style.css" %}">
+  </head>
+  <body>
+<div>
+  <h2>Preguntas</h2>
+  <ul>
+    {% for question in questions %}
+    <li><a href="{{ question.id }}">{{ question.text }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+</body>
+</html>
